@@ -2,6 +2,7 @@
 
 select
     {% for field in fields %}
-    {{ field }} {%- if not loop.last %},{% endif -%}
+    {{ field }} 
+    {%- if not loop.last %},{% endif -%}
     {% endfor %}
 from {{ ref('bank_transactions') }}
