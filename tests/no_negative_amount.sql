@@ -1,2 +1,4 @@
 select * from {{ ref('bank_transactions') }}
-where deposit >= 0
+where deposit < 0
+
+

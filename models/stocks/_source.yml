@@ -5,4 +5,4 @@ sources:
     database: defaultdb
     schema: public
     tables:
-      - name: bank_raw
+      - name: stocks
