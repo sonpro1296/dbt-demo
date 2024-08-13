@@ -1,5 +1,5 @@
 with prices as (
-    select * from {{ source('bank_transactions', 'stocks') }}
+    select * from {{ ref('stock_raw') }}
 ),
 
 stocks_from_start as (
